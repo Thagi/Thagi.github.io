@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Number - Ice Sliding Puzzle</title>
+    <meta name="description" content="Number is an ice-sliding arithmetic puzzle game for iPhone.">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body class="number-theme">
+    <header class="site-header">
+      <a class="brand-mark" href="/"><span class="mark-dot"></span><span>Ice Sliding</span></a>
+      <nav class="nav-links" aria-label="Number navigation">
+        <a href="/number/privacy.html">Privacy</a>
+        <a href="/number/support.html">Support</a>
+        <a href="/color/">Color</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero copy-narrow">
+        <div class="hero-text">
+          <p class="eyebrow">Ice Sliding Number Puzzle</p>
+          <h1>Number</h1>
+          <p class="subtitle">滑る駒が計算マスを通過するたびに値が変わる。範囲を守りながら、ゴールの数値へ導きます。</p>
+          <div class="actions">
+            <a class="button primary" href="/number/privacy.html">Privacy Policy</a>
+            <a class="button" href="/number/support.html">Support</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="game-top"><span>Number</span><span>Range -20..80</span></div>
+              <div class="board">
+                <span class="cell"></span><span class="cell goal-number"></span><span class="cell"></span><span class="cell"></span><span class="cell block"></span><span class="cell"></span><span class="cell"></span>
+                <span class="cell"><span class="operator">+4</span></span><span class="cell"></span><span class="cell"></span><span class="cell"><span class="operator">×2</span></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+                <span class="cell"></span><span class="cell"></span><span class="cell block"></span><span class="cell"></span><span class="cell"></span><span class="cell"><span class="operator">÷3</span></span><span class="cell"></span>
+                <span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell goal-number"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+                <span class="cell"></span><span class="cell block"></span><span class="cell"></span><span class="cell"></span><span class="cell"><span class="operator">-5</span></span><span class="cell"></span><span class="cell"></span>
+                <span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell goal-number"></span><span class="cell"></span>
+                <span class="cell"></span><span class="cell"></span><span class="cell block"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
+              </div>
+              <span class="piece number-piece" style="--x:0;--y:5">8</span>
+              <span class="piece number-piece" style="--x:3;--y:1">12</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-grid">
+          <h2 data-reveal>止まる場所だけでなく、通る順番を考える。</h2>
+          <ul class="feature-list" data-reveal>
+            <li><strong>計算マス</strong>加算・減算・乗算・除算で駒の値が変化します。</li>
+            <li><strong>範囲制限</strong>値が許容範囲を外れると失敗。ルート選びがそのまま解法になります。</li>
+            <li><strong>複数駒</strong>後半ステージとエンドレスでは、複数の値を同時に管理します。</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© 2026 Number</span>
+        <span><a href="/number/privacy.html">Privacy</a> · <a href="/number/support.html">Support</a> · <a href="/app-ads.txt">app-ads.txt</a></span>
+      </div>
+    </footer>
+    <script src="/assets/site.js"></script>
+  </body>
+</html>
+
