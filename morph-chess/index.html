@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morph Chess — Support</title>
+    <meta name="description" content="Morph Chessのサポート情報と遊び方です。">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+      .morph-theme { --accent: #9954e8; }
+      .chess-preview { width: min(380px, 80vw); aspect-ratio: 1; display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(8, 1fr); overflow: hidden; border: 12px solid #2d2438; border-radius: 8px; box-shadow: var(--shadow); }
+      .chess-preview span { display: grid; place-items: center; font-family: Georgia, serif; font-size: clamp(19px, 4vw, 34px); }
+      .chess-preview span:nth-child(16n + 1), .chess-preview span:nth-child(16n + 3), .chess-preview span:nth-child(16n + 5), .chess-preview span:nth-child(16n + 7), .chess-preview span:nth-child(16n + 10), .chess-preview span:nth-child(16n + 12), .chess-preview span:nth-child(16n + 14), .chess-preview span:nth-child(16n + 16) { background: #c8a979; }
+      .chess-preview span:nth-child(16n + 2), .chess-preview span:nth-child(16n + 4), .chess-preview span:nth-child(16n + 6), .chess-preview span:nth-child(16n + 8), .chess-preview span:nth-child(16n + 9), .chess-preview span:nth-child(16n + 11), .chess-preview span:nth-child(16n + 13), .chess-preview span:nth-child(16n + 15) { background: #f4e6ce; }
+      .chess-preview .morph { color: #6a28ba; text-shadow: 0 1px 0 #fff; background: #e3cdfb !important; }
+    </style>
+  </head>
+  <body class="morph-theme">
+    <header class="site-header">
+      <a class="brand-mark" href="/morph-chess/"><span class="mark-dot"></span><span>Morph Chess</span></a>
+      <nav class="nav-links" aria-label="Morph Chess navigation">
+        <a href="/morph-chess/privacy.html">プライバシー</a>
+        <a href="https://github.com/Thagi/Thagi.github.io/issues">サポート</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero copy-narrow">
+        <div class="hero-text">
+          <p class="eyebrow">iPhone board game</p>
+          <h1>Morph Chess</h1>
+          <p class="subtitle">相手の駒を取ると、取った駒と同じ種類へ変身するチェスです。</p>
+          <div class="actions">
+            <a class="button primary" href="#how-to-play">遊び方</a>
+            <a class="button" href="/morph-chess/privacy.html">プライバシー</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="チェス盤のイメージ">
+          <div class="chess-preview" aria-hidden="true">
+            <span>♜</span><span>♞</span><span>♝</span><span>♛</span><span>♚</span><span>♝</span><span>♞</span><span>♜</span>
+            <span>♟</span><span>♟</span><span>♟</span><span>♟</span><span>♟</span><span>♟</span><span>♟</span><span>♟</span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span class="morph">♟</span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span>♙</span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span>
+            <span>♖</span><span>♘</span><span>♗</span><span>♕</span><span>♔</span><span>♗</span><span>♘</span><span>♖</span>
+          </div>
+        </div>
+      </section>
+      <section class="section alt" id="how-to-play">
+        <div class="section-grid">
+          <h2>遊び方</h2>
+          <ul class="feature-list">
+            <li><strong>捕獲すると変身</strong>キング以外の駒は、相手の駒を取った瞬間にその駒と同じ種類へ変わります。色は変わりません。</li>
+            <li><strong>キングは変身しない</strong>キングが駒を取ってもキングのままです。チェック、チェックメイト、ステイルメイトは通常のチェスと同じです。</li>
+            <li><strong>通常の特殊ルール</strong>キャスリング、アンパッサン、昇格に対応しています。昇格した駒も、捕獲すると変身します。</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-grid">
+          <h2>サポート</h2>
+          <div>
+            <p>対局の状態は端末内に保存されます。動作に問題がある場合は、アプリを再起動し、iOSを最新の状態にしてから再度お試しください。</p>
+            <p>広告は在庫や通信状況によって表示されないことがあります。</p>
+            <div class="actions"><a class="button primary" href="https://github.com/Thagi/Thagi.github.io/issues">GitHub Issuesで問い合わせる</a></div>
+            <p><small>お問い合わせには、氏名・メールアドレス・対局内容などの個人情報を記載しないでください。</small></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="footer-inner"><span>© 2026 Morph Chess</span><span><a href="/morph-chess/privacy.html">Privacy Policy</a></span></div></footer>
+  </body>
+</html>
